@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import Contato from './page/contato/Contato';
+import Contato from './pages/contato/Contato';
 
 function App() {
   return (
