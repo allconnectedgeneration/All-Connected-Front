@@ -1,0 +1,45 @@
+.fundoAbout {
+    background-image: url('/src/assets/about.jpeg');
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+  }
+  
+  .text-section {
+    background: rgba(255, 255, 255, 0.8); /* Background semi-transparente */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    margin-bottom: 20px;
+  }
+  
+  h2 {
+    color: #225275; /* Cor All Connected */
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  p {
+    color: #34495e; /* a definir */
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+  
+  @media (max-width: 1024px) {
+    .text-section {
+      padding: 15px;
+    }
+  
+    h2 {
+      font-size: 2.5rem;
+    }
+  
+    p {
+      font-size: 1rem;
+    }
+  }
+  
