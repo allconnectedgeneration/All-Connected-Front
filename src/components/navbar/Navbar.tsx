@@ -1,10 +1,12 @@
 import navLogo from '../../assets/logotipo3.svg'
 import './Navbar.css'
+import { Link } from 'react-router-dom'
+
 
 
 function Navbar() {
  
-  
+
 
   return (
     <>
@@ -13,12 +15,13 @@ function Navbar() {
            <img src={navLogo} alt="Nav Logo" className='nav-logo' />
 
             <div className='flex gap-4'>
-              <div className='hover:underline'>Home</div>
-              <div className='hover:underline'>Sobre</div>
-              <div className='hover:underline'>Cadastrar</div>
-              <div className='hover:underline'>Login</div>
+            <Link to='/home' className='hover:underline'>Home</Link>
+            <Link to='/cadastro' className='hover:underline'>Cadastrar</Link>
+            <Link to='/login' className='hover:underline'>Login</Link>
+            <Link to='/about' className='hover:underline'>Sobre</Link>
+            <Link to='/contato' className='hover:underline'>Contato</Link>
               <div className='hover:underline'>Sair</div>
-              
+
             </div>
           </div>
         </div>
