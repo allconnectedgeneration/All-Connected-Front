@@ -1,13 +1,17 @@
 import React from 'react';
 import './App.css';
-
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import About from './pages/about/About';
 function App() {
   return (
     <>
-    <h1 className="text-3xl font-bold text-red-500 underline text-center">
-      Hello world!
-    </h1>
+      <BrowserRouter>
+        <Routes>
+        <Route path="/" element={<About />} />
+          <Route path="/about" element={<About />} />
+        </Routes>
+      </BrowserRouter>
     </>
-);
+  );
 }
 export default App;
