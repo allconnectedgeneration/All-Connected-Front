@@ -4,7 +4,7 @@ import './App.css';
 
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
-import Cadastro from './paginas/cadastro/Cadastro';
+import Cadastro from './pages/cadastro/Cadastro';
 
 
 
