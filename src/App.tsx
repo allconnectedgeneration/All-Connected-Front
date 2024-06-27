@@ -1,9 +1,12 @@
 import './App.css';
+
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import About from './pages/about/About';
 import Home from './pages/home/Home';
 import Navbar from './components/navbar/Navbar';
 import Footer from './components/footer/Footer';
+import Login from './pages/login/Login';
+
 
 import Contato from './page/contato/Contato';
 function App() {
@@ -18,6 +21,7 @@ function App() {
 
     </>
   );
+
 
 }
 export default App;
