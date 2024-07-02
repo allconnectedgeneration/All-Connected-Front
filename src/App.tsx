@@ -8,12 +8,13 @@ import Footer from './components/footer/Footer';
 import Login from './pages/login/Login';
 import Contato from './pages/contato/Contato';
 import Cadastro from './pages/cadastro/Cadastro';
+import { AuthProvider } from './contexts/AuthContext';
 
   
 function App() {
   return (
     <>
-
+<AuthProvider>
       <BrowserRouter>
       <Navbar />
       <div className="min-h-[80vh]">
@@ -28,6 +29,7 @@ function App() {
         </div>
         <Footer />
       </BrowserRouter>
+      </AuthProvider>
 
 
     </>

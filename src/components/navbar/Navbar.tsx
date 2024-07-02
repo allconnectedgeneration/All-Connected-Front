@@ -1,12 +1,22 @@
 import navLogo from '../../assets/logotipo3.svg'
 import './Navbar.css'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom';
+import { useContext } from "react";
+import { AuthContext } from '../../contexts/AuthContext'
 
 
 
 function Navbar() {
- 
 
+const  navigate = useNavigate()
+
+const { usuario, handleLogout } = useContext(AuthContext)
+
+function logout() {
+handleLogout()
+alert('Usuário deslogado com sucesso')
+navigate('/login')
+}
 
   return (
     <>
@@ -20,7 +30,7 @@ function Navbar() {
             <Link to='/login' className='hover:underline'>Login</Link>
             <Link to='/about' className='hover:underline'>Sobre</Link>
             <Link to='/contato' className='hover:underline'>Contato</Link>
-              <div className='hover:underline'>Sair</div>
+              <Link to='/' onClick={logout} className='hover:underline'>Sair</Link>
 
             </div>
           </div>
