@@ -9,6 +9,7 @@ import Login from './pages/login/Login';
 import Contato from './pages/contato/Contato';
 import Cadastro from './pages/cadastro/Cadastro';
 import { AuthProvider } from './contexts/AuthContext';
+import ListaCategorias from './components/listaCategorias/ListaCategorias';
 
   
 function App() {
@@ -25,6 +26,7 @@ function App() {
           <Route path="/about" element={<About />} />
            <Route path="/cadastro" element={<Cadastro />} />
           <Route path="/contato" element={<Contato />} />
+          <Route path="/categorias" element={<ListaCategorias />} />
         </Routes>
         </div>
         <Footer />

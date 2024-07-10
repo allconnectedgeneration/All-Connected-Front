@@ -1,7 +1,6 @@
 import navLogo from '../../assets/logotipo3.svg'
 import './Navbar.css'
 import { Link, useNavigate } from 'react-router-dom';
-import { useContext } from "react";
 import { AuthContext } from '../../contexts/AuthContext'
 
 
@@ -26,11 +25,13 @@ navigate('/login')
 
             <div className='flex gap-4'>
             <Link to='/home' className='hover:underline'>Home</Link>
+            <Link to='/categorias' className='hover:underline'>Categorias</Link>
+            <Link to='/cadastrocategorias' className='hover:underline'>Cadastrar Categoria</Link>
             <Link to='/cadastro' className='hover:underline'>Cadastrar</Link>
             <Link to='/login' className='hover:underline'>Login</Link>
             <Link to='/about' className='hover:underline'>Sobre</Link>
             <Link to='/contato' className='hover:underline'>Contato</Link>
-              <Link to='/' onClick={logout} className='hover:underline'>Sair</Link>
+            <Link to='/' onClick={logout} className='hover:underline'>Sair</Link>
 
             </div>
           </div>

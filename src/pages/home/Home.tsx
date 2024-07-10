@@ -1,4 +1,5 @@
 import homeLogo from '../../assets/logotipo1.svg'
+import ListaCategorias from '../../components/listaCategorias/ListaCategorias';
 import './Home.css';
 
 
@@ -12,7 +13,7 @@ function Home() {
             </div>
             </div>
         </div>
-      
+      <ListaCategorias/>
       </>
     );
 }
