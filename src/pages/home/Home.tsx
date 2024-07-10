@@ -1,6 +1,7 @@
 import homeLogo from '../../assets/logotipo1.svg'
-import ListaCategorias from '../../components/listaCategorias/ListaCategorias';
+import ListaProdutos from '../../components/produtos/cardProdutos/listaProdutos/ListaProdutos';
 import './Home.css';
+import ModalProduto from '../../components/produtos/modalProdutos/ModalProdutos';
 
 
 function Home() {
@@ -10,10 +11,14 @@ function Home() {
           <div className='container grid  text-white'>
             <div className="flex flex-col gap-4 items-center justify-center py-4">
               <img src= {homeLogo} alt="" className= 'w-1/5' />
+              
+              <div className="flex justify-around gap-4">
+              <ModalProduto/>
+              </div>
             </div>
             </div>
         </div>
-      <ListaCategorias/>
+     <ListaProdutos/>
       </>
     );
 }

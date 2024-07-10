@@ -24,6 +24,7 @@ navigate('/login')
 
             <div className='flex gap-4'>
             <Link to='/home' className='hover:underline'>Home</Link>
+            <Link to='/produtos' className='hover:underline'>Produtos</Link>
             <Link to='/categorias' className='hover:underline'>Categorias</Link>
             <Link to='/cadastrocategorias' className='hover:underline'>Cadastrar Categoria</Link>
             <Link to='/cadastro' className='hover:underline'>Cadastrar</Link>
