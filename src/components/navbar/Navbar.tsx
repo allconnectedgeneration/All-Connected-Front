@@ -1,7 +1,8 @@
 import navLogo from '../../assets/logotipo3.svg'
 import './Navbar.css'
 import { Link, useNavigate } from 'react-router-dom';
-import { AuthContext } from '../../contexts/AuthContext'
+import { AuthContext } from '../../contexts/AuthContext';
+import { useContext } from 'react';
 
 
 
