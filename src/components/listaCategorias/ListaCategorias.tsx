@@ -9,14 +9,14 @@ import CardCategorias from '../cardCategorias/CardCategorias';
 function ListaCategorias() {
   const [categorias, setCategorias] = useState<Categorias[]>([]);
 
-  let navigate = useNavigate();
+  const navigate = useNavigate();
 
   const { usuario, handleLogout } = useContext(AuthContext);
   const token = usuario.token;
 
   async function buscarCategorias() {
     try {
-      await buscar('/categorias', setCategorias, {
+      await buscar('/categoria/all', setCategorias, {
         headers: { Authorization: token },
       });
     } catch (error: any) {
