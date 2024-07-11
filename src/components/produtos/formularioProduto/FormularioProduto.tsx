@@ -12,7 +12,7 @@ function FormularioProduto() {
 
       <form  className="flex flex-col w-1/2 gap-4">
         <div className="flex flex-col gap-2">
-          <label htmlFor="nome">Nome do Produto</label>
+          <label htmlFor="nome">Nome do Produto:</label>
           <input
             
             type="text"

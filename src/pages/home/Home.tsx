@@ -1,5 +1,5 @@
 import homeLogo from '../../assets/logotipo1.svg'
-import ListaProdutos from '../../components/produtos/cardProdutos/listaProdutos/ListaProdutos';
+import ListaProdutos from '../../components/produtos/listaProdutos/ListaProdutos';
 import './Home.css';
 import ModalProduto from '../../components/produtos/modalProdutos/ModalProdutos';
 

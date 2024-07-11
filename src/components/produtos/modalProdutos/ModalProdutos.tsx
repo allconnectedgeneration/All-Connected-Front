@@ -1,10 +1,10 @@
 import React from 'react';
-import FormularioProduto from '../formularioProduto/FormularioPostagem';
+import FormularioProduto from '../formularioProduto/FormularioProduto';
 
 import 'reactjs-popup/dist/index.css';
 import Popup from 'reactjs-popup';
 
-import './ModalProduto.css'
+import './ModalProdutos.css'
 
 function ModalProduto() {
   return (

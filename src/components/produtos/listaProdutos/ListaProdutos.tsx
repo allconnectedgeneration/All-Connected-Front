@@ -1,10 +1,10 @@
 import React, { useContext, useEffect, useState } from 'react';
 import { Dna } from 'react-loader-spinner';
 import { useNavigate } from 'react-router-dom';
-import { AuthContext } from '../../../../contexts/AuthContext';
-import Produtos from '../../../../models/Produtos';
-import { buscar } from '../../../../service/Service';
-import CardProdutos from '../CardProdutos';
+import { AuthContext } from '../../../contexts/AuthContext';
+import Produtos from '../../../models/Produtos';
+import { buscar } from '../../../service/Service';
+import CardProdutos from '../cardProdutos/CardProdutos';
 
 function ListaProdutos() {
   const [produtos, setProdutos] = useState<Produtos[]>([]);

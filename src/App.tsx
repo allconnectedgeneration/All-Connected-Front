@@ -12,8 +12,8 @@ import { AuthProvider } from './contexts/AuthContext';
 import ListaCategorias from './components/listaCategorias/ListaCategorias';
 import FormularioCategoria from './components/formularioCategoria/FormularioCategoria';
 import DeletarCategoria from './components/deletarCategoria/DeletarCategoria';
-import ListaProdutos from './components/produtos/cardProdutos/listaProdutos/ListaProdutos';
-import FormularioProduto from './components/produtos/formularioProduto/FormularioPostagem';
+import ListaProdutos from './components/produtos/listaProdutos/ListaProdutos';
+import FormularioProduto from './components/produtos/formularioProduto/FormularioProduto';
   
 function App() {
   return (
