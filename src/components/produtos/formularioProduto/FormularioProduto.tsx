@@ -16,7 +16,7 @@ function FormularioProduto() {
 
   const [categorias, setCategorias] = useState<Categorias[]>([]);
 
-  const [categorias, setCategorias] = useState<Categorias>({
+  const [categoria, setCategoria] = useState<Categorias>({
     id: 0,
     especificacao: '',
     tipo: ''
@@ -42,7 +42,7 @@ function FormularioProduto() {
   }
 
   async function buscarCategoriaPorId(id: string) {
-    await buscar(`/categoria/${id}`, setCategorias, {
+    await buscar(`/categoria/${id}`, setCategoria, {
       headers: {
         Authorization: token,
       },
@@ -50,7 +50,7 @@ function FormularioProduto() {
   }
 
   async function buscarCategorias() {
-    await buscar('/categoria', setCategorias, {
+    await buscar('/categoria/all', setCategorias, {
       headers: {
         Authorization: token,
       },
@@ -76,7 +76,7 @@ function FormularioProduto() {
   useEffect(() => {
     setProduto({
       ...produto,
-      categorias: categorias,
+      categoria: categoria,
     });
   }, [categorias]);
 
@@ -84,7 +84,7 @@ function FormularioProduto() {
     setProduto({
       ...produto,
       [e.target.name]: e.target.value,
-      categorias: categorias,
+      categoria: categoria,
       usuario: usuario,
     });
   }
@@ -136,7 +136,7 @@ function FormularioProduto() {
     }
   }
 
-  const carregandoCategoria = categorias.tipo === '';
+  const carregandoCategoria = categoria.tipo === '';
 
   return (
     <div className="container flex flex-col mx-auto items-center">
