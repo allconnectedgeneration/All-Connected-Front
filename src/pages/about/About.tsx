@@ -1,9 +1,18 @@
+// import { Navigate, useNavigate } from "react-router-dom";
 import "./About.css";
+import fotoAnderson from "../../assets/anderson.jpg";
+import fotoJulia from "../../assets/julia.jpg";
+import fotoLeticia from "../../assets/leticia.jpg";
+import fotoLuana from "../../assets/luana.jpg";
+import fotoPaloma from "../../assets/paloma.jpg";
+import fotoThamires from "../../assets/thamires.jpg";
+import fotoOsvaldo from "../../assets/osvaldo.jpeg";
 
 function About() {
+  // const navigate = useNavigate();
   return (
     <>
-      <div className="flex gap-20 w-full text-black">
+      <div className="flex gap-20 w-full text-black font-padrão">
         {/* <div className="fundoAbout hidden lg:block"></div> */}
 
         {/* <p> Bem-vindo à All Connected! Nossa empresa é dedicada a oferecer soluções inovadoras que levam a conectividade digital a lugares remotos e comunidades com vulnerabilidade social. Estamos comprometidos em fornecer sinal de celular e internet gratuitamente, tornando o acesso à tecnologia uma realidade para todos.
@@ -64,7 +73,7 @@ function About() {
         </div>
       </div>
 
-      <div className="flex gap-20 w-full">
+      <div className="flex gap-20 w-full font-padrão">
         <div className="items-center p-14 flex w-[50vw]">
           <img
             className="h-[1000px] w-[800px]"
@@ -78,7 +87,9 @@ function About() {
           </h2>
           <div className="flex flex-col items-center">
             <div className="bg-gray-200 w-[880px] p-4 rounded-xl mt-6 hover:bg-slate-400">
-              <p className="font-bold text-2xl">Democratizar o acesso a internet</p>
+              <p className="font-bold text-2xl">
+                Democratizar o acesso a internet
+              </p>
               <p className="mt-4 text-xl">
                 Acreditamos que a internet deve ser acessível a todos,
                 independentemente de onde vivem. Nossa missão é democratizar o
@@ -116,7 +127,9 @@ function About() {
               </p>
             </div>
             <div className="bg-gray-200 w-[880px] p-4 rounded-xl mt-6 hover:bg-slate-400">
-              <p className="font-bold text-2xl">Democratizar o acesso a internet</p>
+              <p className="font-bold text-2xl">
+                Democratizar o acesso a internet
+              </p>
               <p className="mt-4 text-xl">
                 Acreditamos que a internet deve ser acessível a todos,
                 independentemente de onde vivem. Nossa missão é democratizar o
@@ -129,12 +142,75 @@ function About() {
       </div>
 
       <div>
-        <p className="text-2xl p-9 mt-10 text-center font-semibold">
+        <p className="text-2xl p-9 mt-10 text-center font-semibold font-padrão">
           Na All Connected, estamos empenhados em construir um mundo mais
           conectado, inclusivo e sustentável. Junte-se a nós nessa jornada para
           fazer a diferença!
         </p>
       </div>
+
+      <p className="text-4xl text-center mt-8 mb-8 font-semibold font-padrão">Conheça nosso time!</p>
+
+      <article className="flex justify-center items-center gap-20 ">
+        <div>
+          <a href="https://www.linkedin.com/in/adsalves/" target="_blank">
+            <img className="rounded-xl w-36 h-48" src={fotoAnderson}/>
+          </a>
+        
+        </div>
+
+        <div>
+          <a
+            href="https://www.linkedin.com/in/julia-karen-melo/"
+            target="_blank"
+          >
+            <img className="rounded-xl w-36 h-48" src={fotoJulia} />
+          </a>
+        </div>
+
+        <div>
+          <a href="https://www.linkedin.com/in/leticiatsilva/" target="_blank">
+            <img className="rounded-xl w-36 h-48" src={fotoLeticia} />
+          </a>
+        </div>
+
+        <div>
+          <a
+            href="https://www.linkedin.com/in/luananascimentodev/"
+            target="_blank"
+          >
+            <img className="rounded-xl w-36 h-48" src={fotoLuana} />
+          </a>
+        </div>
+
+
+        
+      </article >
+
+      <article className="flex justify-center items-center gap-20 mt-14 mb-12">
+      <div>
+          <a href="https://www.linkedin.com/in/paloma-ferrari/" target="_blank">
+            <img className="rounded-xl w-36 h-48" src={fotoPaloma} />
+          </a>
+        </div>
+
+        <div>
+          <a
+            href="https://www.linkedin.com/in/osvaldo-neto-tech/"
+            target="_blank"
+          >
+            <img className="rounded-xl w-36 h-48" src={fotoOsvaldo} />
+          </a>
+        </div>
+
+        <div>
+          <a href="https://www.linkedin.com/in/thamimac/" target="_blank">
+            <img className="rounded-xl w-36 h-48" src={fotoThamires} />
+          </a>
+        </div>
+      </article>
+
+      
     </>
   );
 }

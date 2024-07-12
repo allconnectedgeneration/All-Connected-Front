@@ -1,12 +1,10 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
-/* eslint-disable prefer-const */
 import React, { useContext, useEffect, useState } from 'react';
 import { Dna } from 'react-loader-spinner';
 import { useNavigate } from 'react-router-dom';
-import { AuthContext } from '../../../contexts/AuthContext';
-import Produtos from '../../../models/Produtos';
-import { buscar } from '../../../service/Service';
-import CardProdutos from '../cardProdutos/CardProdutos';
+import { AuthContext } from '../../../../contexts/AuthContext';
+import Produtos from '../../../../models/Produtos';
+import { buscar } from '../../../../service/Service';
+import CardProdutos from '../CardProdutos';
 
 function ListaProdutos() {
   const [produtos, setProdutos] = useState<Produtos[]>([]);
@@ -25,7 +23,7 @@ function ListaProdutos() {
 
   async function buscarProdutos() {
     try {
-      await buscar('/produto/all', setProdutos, {
+      await buscar('/produtos', setProdutos, {
         headers: {
           Authorization: token,
         },
