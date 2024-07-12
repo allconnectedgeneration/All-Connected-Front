@@ -15,11 +15,13 @@ import DeletarCategoria from './components/deletarCategoria/DeletarCategoria';
 import ListaProdutos from './components/produtos/listaProdutos/ListaProdutos';
 import FormularioProduto from './components/produtos/formularioProduto/FormularioProduto';
 import DeletarProduto from './components/produtos/deletarProduto/DeletarProduto';
+import { CarrinhoContext } from './contexts/CarrinhoContext';
   
 function App() {
   return (
     <>
 <AuthProvider>
+    <CarrinhoContext>
       <BrowserRouter>
       <Navbar />
       <div className="min-h-[80vh]">
@@ -28,7 +30,7 @@ function App() {
           <Route path="/login" element={<Login />} />
           <Route path="/home" element={<Home />} />
           <Route path="/about" element={<About />} />
-           <Route path="/cadastro" element={<Cadastro />} />
+          <Route path="/cadastro" element={<Cadastro />} />
           <Route path="/contato" element={<Contato />} />
           <Route path="/categorias" element={<ListaCategorias />} />
           <Route path="/cadastroCategorias" element={<FormularioCategoria />} />
@@ -42,6 +44,7 @@ function App() {
         </div>
         <Footer />
       </BrowserRouter>
+      </CarrinhoContext>
       </AuthProvider>
 
 
