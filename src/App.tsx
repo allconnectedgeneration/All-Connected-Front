@@ -15,7 +15,9 @@ import DeletarCategoria from './components/deletarCategoria/DeletarCategoria';
 import ListaProdutos from './components/produtos/listaProdutos/ListaProdutos';
 import FormularioProduto from './components/produtos/formularioProduto/FormularioProduto';
 import DeletarProduto from './components/produtos/deletarProduto/DeletarProduto';
-import { CarrinhoContext, CarrinhoProvider } from './contexts/CarrinhoContext';
+
+import { CarrinhoProvider } from './contexts/CarrinhoContext';
+
   
 function App() {
   return (
