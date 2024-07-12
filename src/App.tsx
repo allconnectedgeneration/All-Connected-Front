@@ -15,13 +15,13 @@ import DeletarCategoria from './components/deletarCategoria/DeletarCategoria';
 import ListaProdutos from './components/produtos/listaProdutos/ListaProdutos';
 import FormularioProduto from './components/produtos/formularioProduto/FormularioProduto';
 import DeletarProduto from './components/produtos/deletarProduto/DeletarProduto';
-import { CarrinhoContext } from './contexts/CarrinhoContext';
+import { CarrinhoProvider } from './contexts/CarrinhoContext';
   
 function App() {
   return (
     <>
 <AuthProvider>
-    <CarrinhoContext>
+    <CarrinhoProvider>
       <BrowserRouter>
       <Navbar />
       <div className="min-h-[80vh]">
@@ -44,7 +44,7 @@ function App() {
         </div>
         <Footer />
       </BrowserRouter>
-      </CarrinhoContext>
+      </CarrinhoProvider>
       </AuthProvider>
 
 

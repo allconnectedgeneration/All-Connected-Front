@@ -15,7 +15,7 @@ interface CarrinhoProviderProps {
 
 export const CarrinhoContext = createContext({} as CarrinhoContextProps) 
 
-export function CarrinhoProvider({children}: CarrinhoProviderProps){
+export function CarrinhoProvider({children}: CarrinhoProviderProps) {
 
 const [listaCarrinho, setListaCarrinho] = useState<Produto[]>([])
     
@@ -24,7 +24,6 @@ const [listaCarrinho, setListaCarrinho] = useState<Produto[]>([])
         {children}
     </CarrinhoContext.Provider>
 )
-
 
 function adicionarItem(prod: Produto){
     setListaCarrinho((currentItems: Produto[]) => {

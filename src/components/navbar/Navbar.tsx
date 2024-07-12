@@ -20,7 +20,9 @@ navigate('/login')
     <>
      <div className='w-full bg-indigo-900 text-white flex justify-center py-4'>
           <div className="container flex justify-between">
+            <Link to='/home'>
            <img src={navLogo} alt="Nav Logo" className='nav-logo' />
+           </Link>
 
             <div className='flex gap-4'>
             <Link to='/home' className='hover:underline'>Home</Link>
