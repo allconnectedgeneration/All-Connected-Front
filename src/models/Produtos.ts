@@ -10,4 +10,5 @@ export default interface Produto {
   foto: string;
   categoria: Categorias | null;
   usuario: Usuario | null;
+  qtd?: number
 }
