@@ -1,36 +1,59 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
-import Produto from '../../../models/Produtos'
+import React from "react";
+import { Link } from "react-router-dom";
+import Produto from "../../../models/Produtos";
 
 interface CardProdutosProps {
-  post: Produto
+  post: Produto;
 }
 
-function CardProdutos({post}: CardProdutosProps) {
+function CardProdutos({ post }: CardProdutosProps) {
   return (
-    <div className='border-slate-900 border flex flex-col rounded overflow-hidden justify-between'>
+    <div className="border-gray-300 border flex flex-col rounded-md overflow-hidden justify-between font-padrão w-[400px] hover:shadow-2xl">
       <div>
-        <div className="flex w-full bg-indigo-400 py-2 px-4 items-center gap-4">
-          <img src={post.foto} className='h-12 rounded-full' alt="" />
-          <h3 className='text-lg font-bold text-center uppercase '>{post.nome}</h3>
+        <div className="flex w-full justify-center">
+          <img src={post.foto} className="w-full h-[230px]" alt="" />
         </div>
-        <div className='p-4 '>
-          <h4 className='text-lg font-semibold uppercase'>Quantidade: {post.quantidade}</h4>
-          <h4 className='text-lg font-semibold uppercase'>Preço: {post.preco}</h4>
-          <h4 className='text-lg font-semibold uppercase'>{post.descricao}</h4>
-          <p>Categoria: {post.categoria?.tipo}</p>
+        <div className="p-4 ">
+          <div className="justify-center">
+            <h3 className="text-lg font-bold text-center uppercase w-96">
+              {post.nome}
+            </h3>
+          </div>
+
+          <div className="flex gap-16 justify-center mt-4">
+            <h4 className="text-lg font-bold uppercase text-all-azul-1">
+              R$ {post.preco}
+            </h4>
+            <h4 className="text-lg font-semibold">
+              Quantidade: {post.quantidade} und
+            </h4>
+          </div>
+          <div className="mt-4">
+            <h4 className="text-lg font-semibold text-gray-400">
+              Descrição: {post.descricao}
+            </h4>
+            <h4 className="text-lg font-semibold  text-gray-400">
+              Categoria: {post.categoria?.tipo}
+            </h4>
+          </div>
         </div>
       </div>
-      <div className="flex">
-      <Link to={`/editarProduto/${post.id}`} className='w-full text-white bg-indigo-400 hover:bg-indigo-800 flex items-center justify-center py-2'>
+      <div className="flex gap-5 ml-5 mr-5 mb-4 justify-center">
+        <Link
+          to={`/editarProduto/${post.id}`}
+          className="w-32 rounded-md text-white bg-all-azul-1 hover:bg-all-azul-6 flex items-center justify-center py-2"
+        >
           <button>Editar</button>
         </Link>
-        <Link to={`/deletarProduto/${post.id}`} className='text-white bg-red-400 hover:bg-red-700 w-full flex items-center justify-center'>
+        <Link
+          to={`/deletarProduto/${post.id}`}
+          className="w-32 text-white rounded-md bg-red-400 hover:bg-red-700 flex items-center justify-center"
+        >
           <button>Deletar</button>
         </Link>
       </div>
     </div>
-  )
+  );
 }
 
-export default CardProdutos
+export default CardProdutos;
