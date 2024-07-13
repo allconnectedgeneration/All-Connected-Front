@@ -1,8 +1,8 @@
-import React, { ChangeEvent, useContext, useEffect, useState } from 'react';
+import { ChangeEvent, useContext, useEffect, useState } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
-import Categorias from '../../models/Categorias';
-import { buscar, atualizar, cadastrar } from '../../service/Service';
-import { AuthContext } from '../../contexts/AuthContext';
+import Categorias from '../../../models/Categorias';
+import { buscar, atualizar, cadastrar } from '../../../service/Service';
+import { AuthContext } from '../../../contexts/AuthContext';
 
 
 
@@ -11,7 +11,7 @@ function FormularioCategoria() {
 
         const [categorias, setCategorias] = useState<Categorias>({} as Categorias);
       
-        let navigate = useNavigate();
+        const navigate = useNavigate();
       
         const { id } = useParams<{ id: string }>();
       
@@ -103,7 +103,7 @@ function FormularioCategoria() {
     return (
         <div className="container flex flex-col items-center justify-center mx-auto">
             <h1 className="text-4xl text-center my-8">
-                Cadastrar categoria
+            {id === undefined ? 'Cadastrar categoria' : 'Editar categoria'}
             </h1>
 
             <form className="w-1/2 flex flex-col gap-4" onSubmit={gerarNovaCategoria}>
@@ -135,7 +135,7 @@ function FormularioCategoria() {
                     className="rounded text-slate-100 bg-indigo-400 hover:bg-indigo-800 w-1/2 py-2 mx-auto block"
                     type="submit"
                 >
-                    Cadastrar
+                    {id === undefined ? 'Cadastrar' : 'Editar'}
                 </button>
             </form>
         </div>

@@ -1,5 +1,4 @@
 // import { Navigate, useNavigate } from "react-router-dom";
-import "./About.css";
 import fotoAnderson from "../../assets/anderson.jpg";
 import fotoJulia from "../../assets/julia.jpg";
 import fotoLeticia from "../../assets/leticia.jpg";

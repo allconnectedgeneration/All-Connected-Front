@@ -1,24 +1,15 @@
-import homeLogo from '../../assets/logotipo1.svg'
-import ListaProdutos from '../../components/produtos/listaProdutos/ListaProdutos';
-import './Home.css';
-import ModalProduto from '../../components/produtos/modalProdutos/ModalProdutos';
-
+import homeLogo from '../../assets/logotipo_B_branco.svg'
 
 function Home() {
     return (
         <>
-        <div className="bg-indigo-900 flex justify-center py-6">
+        <div className="bg-all-azul-1 flex justify-center py-3">
           <div className='container grid  text-white'>
             <div className="flex flex-col gap-4 items-center justify-center py-4">
-              <img src= {homeLogo} alt="" className= 'w-1/5' />
-              
-              <div className="flex justify-around gap-4">
-              <ModalProduto/>
-              </div>
+              <img src= {homeLogo} alt="" className= 'w-1/6' />
             </div>
             </div>
         </div>
-     <ListaProdutos/>
       </>
     );
 }

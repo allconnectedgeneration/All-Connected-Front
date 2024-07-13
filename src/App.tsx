@@ -1,5 +1,3 @@
-import './App.css';
-
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import About from './pages/about/About';
 import Home from './pages/home/Home';
@@ -9,9 +7,9 @@ import Login from './pages/login/Login';
 import Contato from './pages/contato/Contato';
 import Cadastro from './pages/cadastro/Cadastro';
 import { AuthProvider } from './contexts/AuthContext';
-import ListaCategorias from './components/listaCategorias/ListaCategorias';
-import FormularioCategoria from './components/formularioCategoria/FormularioCategoria';
-import DeletarCategoria from './components/deletarCategoria/DeletarCategoria';
+import ListaCategorias from './components/categorias/listaCategorias/ListaCategorias';
+import FormularioCategoria from './components/categorias/formularioCategoria/FormularioCategoria';
+import DeletarCategoria from './components/categorias/deletarCategoria/DeletarCategoria';
 import ListaProdutos from './components/produtos/listaProdutos/ListaProdutos';
 import FormularioProduto from './components/produtos/formularioProduto/FormularioProduto';
 import DeletarProduto from './components/produtos/deletarProduto/DeletarProduto';
@@ -26,7 +24,7 @@ function App() {
     <CarrinhoProvider>
       <BrowserRouter>
       <Navbar />
-      <div className="min-h-[80vh]">
+      <div className="min-h-[85vh]">
         <Routes>
         <Route path="/" element={<Home />} />
           <Route path="/login" element={<Login />} />
