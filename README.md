@@ -45,7 +45,7 @@ O projeto ainda está em desenvolvimento e as próximas atualizações serão vo
       <a href="https://www.linkedin.com/in/adsalves/" title="Anderson Alves">
     <img src="https://avatars.githubusercontent.com/u/150266023?v=4" width="100px;" alt="Foto de Anderson Alves no GitHub"/><br>
     <sub>
-      <b>Anderson Alves</b>
+      <b>Anderson A.</b>
         </sub>
       </a>
     </td>
@@ -53,7 +53,7 @@ O projeto ainda está em desenvolvimento e as próximas atualizações serão vo
        <a href="https://www.linkedin.com/in/julia-karen-melo/" title="Julia Melo">
     <img src="https://avatars.githubusercontent.com/u/160678981?v=4" width="100px;" alt="Foto de Julia Melo no GitHub"/><br>
     <sub>
-      <b>Julia Melo</b>
+      <b>Julia M.</b>
         </sub>
       </a>
     </td>
@@ -61,7 +61,7 @@ O projeto ainda está em desenvolvimento e as próximas atualizações serão vo
        <a href="https://www.linkedin.com/in/leticiatsilva/" title="Leticia Silva">
     <img src="https://avatars.githubusercontent.com/u/167130040?v=4" width="100px;" alt="Foto de Leticia Silva no GitHub"/><br>
     <sub>
-      <b>Leticia Silva</b>
+      <b>Leticia S.</b>
         </sub>
       </a>
     </td>
@@ -69,7 +69,7 @@ O projeto ainda está em desenvolvimento e as próximas atualizações serão vo
        <a href="https://www.linkedin.com/in/luananascimentodev/" title="Luana Nascimento">
     <img src="https://avatars.githubusercontent.com/u/120537755?s=400&u=2f212c82c1bbdb0b74acc4a8ffa996298d7c0f3f&v=4" width="100px;" alt="Foto de Luana Nascimento no GitHub"/><br>
     <sub>
-      <b>Luana Nascimento</b>
+      <b>Luana N. </b>
         </sub>
       </a>
     </td>
@@ -77,7 +77,7 @@ O projeto ainda está em desenvolvimento e as próximas atualizações serão vo
        <a href="https://www.linkedin.com/in/osvaldoneto0/" title="Osvaldo Neto">
     <img src="https://avatars.githubusercontent.com/u/166192036?v=4" width="100px;" alt="Foto de Osvaldo Neto no GitHub"/><br>
     <sub>
-      <b>Osvaldo Neto</b>
+      <b>Osvaldo N.</b>
         </sub>
       </a>
     </td>
@@ -85,7 +85,7 @@ O projeto ainda está em desenvolvimento e as próximas atualizações serão vo
        <a href="https://www.linkedin.com/in/paloma-ferrari/" title="Paloma Ferrari">
     <img src="https://avatars.githubusercontent.com/u/111384818?v=4" width="100px;" alt="Foto de Paloma Ferrari no GitHub"/><br>
     <sub>
-      <b>Paloma Ferrari</b>
+      <b>Paloma F.</b>
         </sub>
       </a>
     </td>
@@ -93,7 +93,7 @@ O projeto ainda está em desenvolvimento e as próximas atualizações serão vo
        <a href="https://www.linkedin.com/in/paloma-ferrari/" title="Thamires Martins">
     <img src="https://avatars.githubusercontent.com/u/165708887?v=4" width="100px;" alt="Foto de Paloma Thamires Martins"/><br>
     <sub>
-      <b>Thamires Martins</b>
+      <b>Thamires M.</b>
         </sub>
       </a>
     </td>
