@@ -2,7 +2,7 @@
 
 A All Connected é uma plataforma de comércio eletrônico alinhada com os princípios do Objetivo de Desenvolvimento Sustentável (ODS) 9 da ONU, que promove a construção de infraestruturas resilientes, a promoção da industrialização inclusiva e sustentável e o fomento à inovação.
 
-Projeto Integrador Pessoa FullStack Jr - Generation Brazil. 
+Projeto Integrador Bootcamp Pessoa FullStack Jr - Generation Brazil. 
 
 ## Funcionalidades
 
