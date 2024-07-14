@@ -1,7 +1,7 @@
 import axios from "axios";
 
 export const api = axios.create({
-  baseURL: 'https://all-connected.onrender.com/' //subistituir o link ao lado por esse import.meta.env.VITE_API_URL para funcionar no deploy
+  baseURL: import.meta.env.VITE_API_URL 
 })
 
 export const cadastrarUsuario = async(url: string, dados: Object, setDados: Function) => {
