@@ -1,13 +1,13 @@
-import React, { useContext, useEffect, useState } from 'react'
+import { useContext, useEffect, useState } from 'react'
 import { useNavigate, useParams } from 'react-router-dom'
-import { AuthContext } from '../../contexts/AuthContext'
-import Categorias from '../../models/Categorias'
-import { buscar, deletar } from '../../service/Service'
+import { AuthContext } from '../../../contexts/AuthContext'
+import Categorias from '../../../models/Categorias'
+import { buscar, deletar } from '../../../service/Service'
 
 function DeletarCategoria() {
     const [categorias, setCategorias] = useState<Categorias>({} as Categorias)
 
-    let navigate = useNavigate()
+    const navigate = useNavigate()
 
     const { id } = useParams<{ id: string }>()
 

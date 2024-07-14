@@ -1,45 +1,47 @@
-import navLogo from '../../assets/logotipo3.svg'
-import './Navbar.css'
+import navLogo from '../../assets/logotipo_A_branco.svg'
 import { Link, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../contexts/AuthContext';
 import { useContext } from 'react';
+import loginIcon from '../../assets/login_branco_porta.svg'
+import logoutIcon from '../../assets/deslogar_branco_porta.svg'
 
 function Navbar() {
+  const navigate = useNavigate();
+  const { usuario, handleLogout } = useContext(AuthContext);
 
-const  navigate = useNavigate()
-
-const { usuario, handleLogout } = useContext(AuthContext)
-
-function logout() {
-handleLogout()
-alert('Usuário deslogado com sucesso')
-navigate('/login')
-}
+  function logout() {
+    handleLogout();
+    alert('Usuário deslogado com sucesso');
+    navigate('/');
+  }
 
   return (
-    <>
-     <div className='w-full bg-indigo-900 text-white flex justify-center py-4'>
-          <div className="container flex justify-between">
-            <Link to='/home'>
-           <img src={navLogo} alt="Nav Logo" className='nav-logo' />
-           </Link>
+    <div className='w-full bg-all-azul-1 text-white flex justify-center py-5 relative px-4'>
+      <div className="container flex justify-center items-center relative">
+        <Link to='/home' className='absolute left-0 pl-4 hover:scale-105 transition duration-100 ease-in-out'>
+          <img src={navLogo} alt="Nav Logo" className='h-10 w-10' />
+        </Link>
 
-            <div className='flex gap-4'>
-            <Link to='/home' className='hover:underline'>Home</Link>
-            <Link to='/produtos' className='hover:underline'>Produtos</Link>
-            <Link to='/categorias' className='hover:underline'>Categorias</Link>
-            <Link to='/cadastrocategorias' className='hover:underline'>Cadastrar Categoria</Link>
-            <Link to='/cadastro' className='hover:underline'>Cadastrar</Link>
-            <Link to='/login' className='hover:underline'>Login</Link>
-            <Link to='/about' className='hover:underline'>Sobre</Link>
-            <Link to='/contato' className='hover:underline'>Contato</Link>
-            <Link to='/' onClick={logout} className='hover:underline'>Sair</Link>
-
-            </div>
-          </div>
+        <div className='flex gap-4 items-center font-bold'>
+          <Link to='/produtos' className='hover:scale-105'>PRODUTOS</Link>
+          <Link to='/categorias' className='hover:scale-105'>CATEGORIAS</Link>
+          <Link to='/contato' className='hover:scale-105 '>CONTATO</Link>
+          <Link to='/about' className='hover:scale-105'>SOBRE</Link>
+          <Link to='/perfil' className='hover:scale-105'>PERFIL</Link>
         </div>
-    </>
-  )
+
+        {usuario.token !== "" ? (
+          <button onClick={logout} className='absolute right-0 flex items-center pr-4 hover:scale-110 transition duration-100'>
+            <img src={logoutIcon} alt="Logout" className='h-8 w-8' />
+          </button>
+        ) : (
+          <Link to='/login' className='absolute right-0 flex items-center pr-4 hover:scale-110 transition duration-100'>
+            <img src={loginIcon} alt="Login" className='h-8 w-8' />
+          </Link>
+        )}
+      </div>
+    </div>
+  );
 }
 
-export default Navbar
+export default Navbar;
