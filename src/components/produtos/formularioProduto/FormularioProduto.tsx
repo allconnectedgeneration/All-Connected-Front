@@ -1,4 +1,4 @@
-import React, { ChangeEvent, useContext, useEffect, useState } from 'react';
+import { ChangeEvent, useContext, useEffect, useState } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import { AuthContext } from '../../../contexts/AuthContext';
 import Produto from '../../../models/Produtos';
@@ -7,7 +7,7 @@ import { buscar, atualizar, cadastrar } from '../../../service/Service';
 
 
 function FormularioProduto() {
-  let navigate = useNavigate();
+  const navigate = useNavigate();
 
   const { id } = useParams<{ id: string }>();
 
@@ -19,7 +19,7 @@ function FormularioProduto() {
   const [categoria, setCategoria] = useState<Categorias>({
     id: 0,
     especificacao: '',
-    tipo: ''
+    tipo: '',
   });
 
   const [produto, setProduto] = useState<Produto>({
@@ -60,7 +60,7 @@ function FormularioProduto() {
   useEffect(() => {
     if (token === '') {
       alert('Você precisa estar logado');
-      navigate('/');
+      navigate('/login');
     }
   }, [token]);
 

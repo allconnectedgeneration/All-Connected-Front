@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState } from 'react'
+import { useContext, useEffect, useState } from 'react'
 import { useNavigate, useParams } from 'react-router-dom'
 import { AuthContext } from '../../../contexts/AuthContext'
 import Produto from '../../../models/Produtos'
@@ -7,7 +7,7 @@ import { buscar, deletar } from '../../../service/Service'
 function DeletarProduto() {
   const [produto, setProduto] = useState<Produto>({} as Produto)
 
-  let navigate = useNavigate()
+  const navigate = useNavigate()
 
   const { id } = useParams<{ id: string }>()
 
