@@ -14,9 +14,11 @@ export default {
         "all-branco-2": "#ffffff",
         "all-preto-3": "#000000",
         "all-cinza-7": "#d9d9d9",
+        "all-azul-7": "#04314c",
       },
       fontFamily: {
         'padrão': ['Montserrat'],
+        'brunoace':['Bruno Ace'],
       },
     },
   },

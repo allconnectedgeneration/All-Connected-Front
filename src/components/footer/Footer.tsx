@@ -6,7 +6,7 @@ function Footer() {
 
   return (
     <>
-        <div className="flex justify-center bg-all-azul-1  text-white">
+        <div className="flex justify-center bg-all-azul-7  text-white font-brunoace">
           <div className="container flex flex-col items-center py-2">
             <p className='text-xl font-bold text-white'> &copy; {new Date().getFullYear()} All Connected </p>
             <p className='text-lg text-white'>Acesse nossas redes</p>

@@ -50,11 +50,13 @@ function ListaProdutos() {
         />
       )}
       
-      <div className='container mx-auto my-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4'>
-        {produtos.map((produto) => (
-          <CardProdutos key={produto.id} post={produto} />
-        ))}
-      </div>
+      <div className="container mx-auto my-4 flex justify-center">
+  <div className="grid grid-cols-1 gap-12 sm:grid-cols-2 lg:grid-cols-3">
+    {produtos.map((produto) => (
+      <CardProdutos key={produto.id} post={produto} />
+    ))}
+  </div>
+</div>
     </>
   );
 }

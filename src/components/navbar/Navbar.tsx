@@ -16,13 +16,13 @@ function Navbar() {
   }
 
   return (
-    <div className='w-full bg-all-azul-1 text-white flex justify-center py-5 relative px-4'>
+    <div className='w-full bg-all-azul-7 text-white flex justify-center py-5 relative px-4'>
       <div className="container flex justify-center items-center relative">
         <Link to='/home' className='absolute left-0 pl-4 hover:scale-105 transition duration-100 ease-in-out'>
           <img src={navLogo} alt="Nav Logo" className='h-10 w-10' />
         </Link>
 
-        <div className='flex gap-4 items-center font-bold'>
+        <div className='flex gap-4 items-center font-bold font-brunoace'>
           <Link to='/produtos' className='hover:scale-105'>PRODUTOS</Link>
           <Link to='/categorias' className='hover:scale-105'>CATEGORIAS</Link>
           <Link to='/contato' className='hover:scale-105 '>CONTATO</Link>

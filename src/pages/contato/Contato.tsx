@@ -22,7 +22,7 @@ export default function Contato() {
             Exceto finais de semana e feriados.
           </p>
           <div className="flex mt-4 gap-16 items-center">
-            <button className="bg-blue-950 text-white font-bold p-3 rounded-lg">
+            <button className="bg-all-azul-7 text-white font-bold p-3 rounded-lg">
               INICIAR ATENDIMENTO
             </button>
             <div className="flex gap-2 items-center font-bold text-green-500">

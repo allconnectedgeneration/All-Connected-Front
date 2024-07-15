@@ -48,15 +48,16 @@ function ListaCategorias() {
         />
       )}
 
-      <div className="flex justify-center w-full my-4">
-        <div className="container flex flex-col">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {categorias.map((categoria) => (
-              <CardCategorias key={categoria.id} categorias={categoria} />
-            ))}
-          </div>
-        </div>
-      </div>
+<div className="flex justify-center w-full my-4">
+  <div className="container flex flex-col items-center">
+    <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
+      {categorias.map((categoria) => (
+        <CardCategorias key={categoria.id} categorias={categoria} />
+      ))}
+    </div>
+  </div>
+</div>
+
     </>
   );
 }

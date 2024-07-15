@@ -40,13 +40,13 @@ function CardProdutos({ post }: CardProdutosProps) {
       <div className="flex gap-5 ml-5 mr-5 mb-4 justify-center">
         <Link
           to={`/editarProduto/${post.id}`}
-          className="w-32 rounded-md text-white bg-all-azul-1 hover:bg-all-azul-6 flex items-center justify-center py-2"
+          className="w-32 rounded-md bg-all-azul-7 text-white hover:text-all-azul-7 hover:bg-all-cinza-7 font-brunoace flex items-center justify-center py-2"
         >
           <button>Editar</button>
         </Link>
         <Link
           to={`/deletarProduto/${post.id}`}
-          className="w-32 text-white rounded-md bg-red-400 hover:bg-red-700 flex items-center justify-center"
+          className="w-32 text-white rounded-md bg-red-400 hover:bg-red-700 font-brunoace flex items-center justify-center"
         >
           <button>Deletar</button>
         </Link>
