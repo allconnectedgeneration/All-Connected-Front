@@ -153,7 +153,7 @@ function About() {
       <article className="flex justify-center items-center gap-20 ">
         <div>
           <a href="https://www.linkedin.com/in/adsalves/" target="_blank">
-            <img className="rounded-xl w-36 h-48" src={fotoAnderson}/>
+            <img className="rounded-xl" src={fotoAnderson}/>
           </a>
         
         </div>
@@ -163,13 +163,13 @@ function About() {
             href="https://www.linkedin.com/in/julia-karen-melo/"
             target="_blank"
           >
-            <img className="rounded-xl w-36 h-48" src={fotoJulia} />
+            <img className="rounded-xl" src={fotoJulia} />
           </a>
         </div>
 
         <div>
           <a href="https://www.linkedin.com/in/leticiatsilva/" target="_blank">
-            <img className="rounded-xl w-36 h-48" src={fotoLeticia} />
+            <img className="rounded-xl" src={fotoLeticia} />
           </a>
         </div>
 
@@ -178,7 +178,7 @@ function About() {
             href="https://www.linkedin.com/in/luananascimentodev/"
             target="_blank"
           >
-            <img className="rounded-xl w-36 h-48" src={fotoLuana} />
+            <img className="rounded-xl" src={fotoLuana} />
           </a>
         </div>
 
@@ -189,7 +189,7 @@ function About() {
       <article className="flex justify-center items-center gap-20 mt-14 mb-12">
       <div>
           <a href="https://www.linkedin.com/in/paloma-ferrari/" target="_blank">
-            <img className="rounded-xl w-36 h-48" src={fotoPaloma} />
+            <img className="rounded-xl " src={fotoPaloma} />
           </a>
         </div>
 
@@ -198,13 +198,13 @@ function About() {
             href="https://www.linkedin.com/in/osvaldo-neto-tech/"
             target="_blank"
           >
-            <img className="rounded-xl w-36 h-48" src={fotoOsvaldo} />
+            <img className="rounded-xl" src={fotoOsvaldo} />
           </a>
         </div>
 
         <div>
           <a href="https://www.linkedin.com/in/thamimac/" target="_blank">
-            <img className="rounded-xl w-36 h-48" src={fotoThamires} />
+            <img className="rounded-xl" src={fotoThamires} />
           </a>
         </div>
       </article>
