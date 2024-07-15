@@ -148,14 +148,15 @@ function About() {
         </p>
       </div>
 
-      <p className="text-4xl text-center mt-8 mb-8 font-semibold font-padrão">Conheça nosso time!</p>
+      <p className="text-4xl text-center mt-8 mb-8 font-semibold font-padrão">
+        Conheça nosso time!
+      </p>
 
-      <article className="flex justify-center items-center gap-20 ">
+      {/* <article className="flex justify-center items-center gap-20 ">
         <div>
           <a href="https://www.linkedin.com/in/adsalves/" target="_blank">
-            <img className="rounded-xl" src={fotoAnderson}/>
+            <img className="rounded-xl" src={fotoAnderson} />
           </a>
-        
         </div>
 
         <div>
@@ -181,13 +182,10 @@ function About() {
             <img className="rounded-xl" src={fotoLuana} />
           </a>
         </div>
-
-
-        
-      </article >
+      </article> */}
 
       <article className="flex justify-center items-center gap-20 mt-14 mb-12">
-      <div>
+        {/* <div>
           <a href="https://www.linkedin.com/in/paloma-ferrari/" target="_blank">
             <img className="rounded-xl " src={fotoPaloma} />
           </a>
@@ -204,12 +202,275 @@ function About() {
 
         <div>
           <a href="https://www.linkedin.com/in/thamimac/" target="_blank">
-            <img className="rounded-xl" src={fotoThamires} />
+            <img className="rounded-xl hover:opacity-70" src={fotoThamires} />
+          </a>
+        </div> */}
+
+        <div className="flex items-center justify-center w-[129px] h-[210px]">
+          <a className="relative block  bg-gray-900 group w-[130px] h-[200px] rounded-xl" href="##">
+            <img
+              className="absolute inset-0 object-cover 
+                                  group-hover:opacity-50 rounded-xl w-[130px] h-[200px]"
+              src={fotoAnderson}
+            />
+            <div className="relative p-5">
+              <div className="mt-20">
+                {/* Hidden content */}
+                <div
+                  className="transition-all transform 
+                                translate-y-8 opacity-0 
+                                group-hover:opacity-100 
+                                group-hover:translate-y-0"
+                >
+                  <div className="p-2">
+                    <p className="text-lg text-white">Anderson</p>
+                    <a
+                      href="https://www.linkedin.com/in/adsalves/"
+                      target="blank"
+                    >
+                      <button
+                        className="px-4 py-2 text-sm 
+                                            text-white bg-all-azul-1"
+                      >
+                        Linkedin
+                      </button>
+                    </a>
+                    
+                  </div>
+                </div>
+                {/* End of hidden content */}
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div className="flex items-center justify-center w-[129px] h-[210px]">
+          <a className="relative block  bg-gray-900 group w-[130px] h-[200px] rounded-xl" href="##">
+            <img
+              className="absolute inset-0 object-cover 
+                                  group-hover:opacity-50 rounded-xl w-[130px] h-[200px]"
+              src={fotoJulia}
+            />
+            <div className="relative p-5">
+              <div className="mt-20">
+                {/* Hidden content */}
+                <div
+                  className="transition-all transform 
+                                translate-y-8 opacity-0 
+                                group-hover:opacity-100 
+                                group-hover:translate-y-0"
+                >
+                  <div className="p-2">
+                    <p className="text-lg text-white">Julia</p>
+                    <a
+                      href="https://www.linkedin.com/in/julia-karen-melo/"
+                      target="blank"
+                    >
+                      <button
+                        className="px-4 py-2 text-sm 
+                                            text-white bg-all-azul-1"
+                      >
+                        Linkedin
+                      </button>
+                    </a>
+                  </div>
+                </div>
+                {/* End of hidden content */}
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div className="flex items-center justify-center w-[129px] h-[210px]">
+          <a className="relative block  bg-gray-900 group w-[130px] h-[200px] rounded-xl" href="##">
+            <img
+              className="absolute inset-0 object-cover 
+                                  group-hover:opacity-50 rounded-xl w-[130px] h-[200px]"
+              src={fotoLeticia}
+            />
+            <div className="relative p-5">
+              <div className="mt-20">
+                {/* Hidden content */}
+                <div
+                  className="transition-all transform 
+                                translate-y-8 opacity-0 
+                                group-hover:opacity-100 
+                                group-hover:translate-y-0"
+                >
+                  <div className="p-2">
+                    <p className="text-lg text-white">Leticia</p>
+                    <a
+                      href="https://www.linkedin.com/in/leticiatsilva/"
+                      target="blank"
+                    >
+                      <button
+                        className="px-4 py-2 text-sm 
+                                            text-white bg-all-azul-1"
+                      >
+                        Linkedin
+                      </button>
+                    </a>
+                  </div>
+                </div>
+                {/* End of hidden content */}
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div className="flex items-center justify-center w-[129px] h-[210px]">
+          <a className="relative block  bg-gray-900 group w-[130px] h-[200px] rounded-xl" href="##">
+            <img
+              className="absolute inset-0 object-cover 
+                                  group-hover:opacity-50 rounded-xl w-[130px] h-[200px]"
+              src={fotoLuana}
+            />
+            <div className="relative p-5">
+              <div className="mt-20">
+                {/* Hidden content */}
+                <div
+                  className="transition-all transform 
+                                translate-y-8 opacity-0 
+                                group-hover:opacity-100 
+                                group-hover:translate-y-0"
+                >
+                  <div className="p-2">
+                    <p className="text-lg text-white">Luana</p>
+                    <a
+                      href="https://www.linkedin.com/in/luananascimentodev/"
+                      target="blank"
+                    >
+                      <button
+                        className="px-4 py-2 text-sm 
+                                            text-white bg-all-azul-1"
+                      >
+                        Linkedin
+                      </button>
+                    </a>
+                  </div>
+                </div>
+                {/* End of hidden content */}
+              </div>
+            </div>
+          </a>
+        </div>
+
+        
+
+      </article>
+
+      <article className="flex justify-center items-center gap-20 mt-14 mb-12">
+      <div className="flex items-center justify-center">
+          <a className="relative block  bg-gray-900 group w-[130px] h-[200px] rounded-xl" href="##">
+            <img
+              className="absolute inset-0 object-cover 
+                                  group-hover:opacity-50 rounded-xl w-[130px] h-[200px]"
+              src={fotoPaloma}
+            />
+            <div className="relative p-5">
+              <div className="mt-20">
+                {/* Hidden content */}
+                <div
+                  className="transition-all transform 
+                                translate-y-8 opacity-0 
+                                group-hover:opacity-100 
+                                group-hover:translate-y-0"
+                >
+                  <div className="p-2">
+                    <p className="text-lg text-white">Paloma</p>
+                    <a
+                      href="https://www.linkedin.com/in/paloma-ferrari/"
+                      target="blank"
+                    >
+                      <button
+                        className="px-4 py-2 text-sm 
+                                            text-white bg-all-azul-1"
+                      >
+                        Linkedin
+                      </button>
+                    </a>
+                  </div>
+                </div>
+                {/* End of hidden content */}
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div className="flex items-center justify-center w-[129px] h-[210px]">
+          <a className="relative block  bg-gray-900 group w-[130px] h-[200px] rounded-xl" href="##">
+            <img
+              className="absolute inset-0 object-cover 
+                                  group-hover:opacity-50 rounded-xl w-[130px] h-[200px]"
+              src={fotoOsvaldo}
+            />
+            <div className="relative p-5">
+              <div className="mt-20">
+                {/* Hidden content */}
+                <div
+                  className="transition-all transform 
+                                translate-y-8 opacity-0 
+                                group-hover:opacity-100 
+                                group-hover:translate-y-0"
+                >
+                  <div className="p-2">
+                    <p className="text-lg text-white">Osvaldo</p>
+                    <a
+                      href="https://www.linkedin.com/in/osvaldo-neto-tech/"
+                      target="blank"
+                    >
+                      <button
+                        className="px-4 py-2 text-sm 
+                                            text-white bg-all-azul-1"
+                      >
+                        Linkedin
+                      </button>
+                    </a>
+                  </div>
+                </div>
+                {/* End of hidden content */}
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div className="flex items-center justify-center w-[129px] h-[210px]">
+          <a className="relative block  bg-gray-900 group w-[130px] h-[200px] rounded-xl" href="##">
+            <img
+              className="absolute inset-0 object-cover 
+                                  group-hover:opacity-50 rounded-xl w-[130px] h-[200px]"
+              src={fotoThamires}
+            />
+            <div className="relative p-5">
+              <div className="mt-20">
+                {/* Hidden content */}
+                <div
+                  className="transition-all transform 
+                                translate-y-8 opacity-0 
+                                group-hover:opacity-100 
+                                group-hover:translate-y-0"
+                >
+                  <div className="p-2">
+                    <p className="text-lg text-white">Thamires</p>
+                    <a
+                      href="https://www.linkedin.com/in/thamimac/"
+                      target="blank"
+                    >
+                      <button
+                        className="px-4 py-2 text-sm 
+                                            text-white bg-all-azul-1"
+                      >
+                        Linkedin
+                      </button>
+                    </a>
+                  </div>
+                </div>
+                {/* End of hidden content */}
+              </div>
+            </div>
           </a>
         </div>
       </article>
-
-      
     </>
   );
 }

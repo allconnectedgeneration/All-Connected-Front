@@ -27,16 +27,17 @@ function Navbar() {
           <Link to='/categorias' className='hover:scale-105'>CATEGORIAS</Link>
           <Link to='/contato' className='hover:scale-105 '>CONTATO</Link>
           <Link to='/about' className='hover:scale-105'>SOBRE</Link>
-          <Link to='/perfil' className='hover:scale-105'>PERFIL</Link>
         </div>
 
         {usuario.token !== "" ? (
-          <button onClick={logout} className='absolute right-0 flex items-center pr-4 hover:scale-110 transition duration-100'>
+          <button onClick={logout} className='gap-2 absolute right-0 flex items-center pr-4 hover:scale-110 transition duration-100 font-brunoace'>
             <img src={logoutIcon} alt="Logout" className='h-8 w-8' />
+            <p className='font-brunoace'>Logout</p>
           </button>
         ) : (
-          <Link to='/login' className='absolute right-0 flex items-center pr-4 hover:scale-110 transition duration-100'>
+          <Link to='/login' className='gap-2 absolute right-0 flex items-center pr-4 hover:scale-110 transition duration-100'>
             <img src={loginIcon} alt="Login" className='h-8 w-8' />
+            <p className='font-brunoace'>Login</p>
           </Link>
         )}
       </div>

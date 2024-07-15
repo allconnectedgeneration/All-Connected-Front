@@ -1,28 +1,31 @@
-import homeLogo from '../../assets/logotipo_B_branco.svg'
+import React from 'react';
+import homeLogo from '../../assets/logotipo_B_branco.svg';
 
 function Home() {
-    return (
-        <>
-        <div className="bg-all-azul-7 flex justify-center py-1">
-            <div className="flex items-center justify-center py-1">
-              <img src= {homeLogo} alt="" className= 'w-1/5' />
-            </div>
-            
-            </div>
+  return (
+    <>
+      <div className="bg-all-azul-7 flex justify-center py-1">
+        <div className="flex items-center justify-center py-1">
+          <img src={homeLogo} alt="" className='w-1/5' />
+        </div>
+      </div>
 
-            <div className="bg-all-azul-4 flex justify-center h-screen mt-6 mb-6">
-            <div className="flex-col items-center justify-center bg-all-azul-7 w-[1000px] rounded-xl">            
-              <p className="flex justify-center mt-4 text-5xl text-center leading-relaxed text-white font-brunoace">
-              A All Connected é uma plataforma de comércio eletrônico alinhada com 
-              os princípios do Objetivo de Desenvolvimento Sustentável (ODS) 9 da ONU, 
-              que promove a construção de infraestruturas resilientes, a promoção da industrialização 
-              inclusiva e sustentável e o fomento à inovação. 
-              </p>
-              </div>
-            </div>
-        
-      </>
-    );
+      <div className="bg-all-azul-4 flex justify-center min-h-screen pt-6 pb-6">
+        <div className="w-full flex justify-center">
+          {/* Código de incorporação do slide do Canva */}
+          <div style={{ position: 'relative', width: '50%', height: 0, paddingTop: '28.125%', boxShadow: '0 2px 8px 0 rgba(63,69,81,0.16)', marginTop: '1.6em', marginBottom: '0.9em', overflow: 'hidden', borderRadius: '8px', willChange: 'transform' }}>
+            <iframe 
+              loading="lazy" 
+              style={{ position: 'absolute', width: '100%', height: '100%', top: 0, left: 0, border: 'none', padding: 0, margin: 0 }} 
+              src="https://www.canva.com/design/DAGK4AQ9sio/OnR6p8Qdt1XL-XaPqskk7Q/view?embed" 
+              allowFullScreen 
+              allow="fullscreen">
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </>
+  );
 }
 
 export default Home;
