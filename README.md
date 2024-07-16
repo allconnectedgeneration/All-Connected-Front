@@ -34,8 +34,9 @@ Deploy:
 O projeto ainda está em desenvolvimento e as próximas atualizações serão voltadas aos seguintes componentes:
 
 - [ ] Carrinho de compras
-- [ ] Projetos sociais com status de atingimento da meta
 - [ ] Edição de perfil
+- [ ] Especificação do projeto social vinculado a cada produto
+- [ ] Projetos sociais com status de atingimento da meta
 
 ## Participantes do Grupo:
 
